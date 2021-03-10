@@ -1,0 +1,15 @@
+﻿@model Vidly.Models.Movie
+@{
+	ViewBag.Title = "Details";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+	<div class="card-header">Movie</div>
+	<div class="card-body">
+		<h4 class="card-title">@Model.Name</h4>
+		<p class="card-text">@Model.ReleaseDate.ToShortDateString()</p>
+		<p class="card-text">@Model.Genre.Name</p>
+	</div>
+</div>
+
