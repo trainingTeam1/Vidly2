@@ -245,6 +245,10 @@
     <Compile Include="Migrations\202103091818447_AddNumbmersInStockMovies.Designer.cs">
       <DependentUpon>202103091818447_AddNumbmersInStockMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103161857209_MovieNameRequired.cs" />
+    <Compile Include="Migrations\202103161857209_MovieNameRequired.Designer.cs">
+      <DependentUpon>202103161857209_MovieNameRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -381,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103091818447_AddNumbmersInStockMovies.resx">
       <DependentUpon>202103091818447_AddNumbmersInStockMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103161857209_MovieNameRequired.resx">
+      <DependentUpon>202103161857209_MovieNameRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
