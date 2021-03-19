@@ -15,6 +15,8 @@ namespace Vidly.DTOs
 
         public byte MemberShipTypeId { get; set; }
 
+        public MembershipTypeDto MembershipType { get; set; }
+
         public DateTime? BirthDate { get; set; }
     }
 }
