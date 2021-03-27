@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AutoMapper;
+using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Http;
-using AutoMapper;
 using Vidly.DTOs;
 using Vidly.Models;
 

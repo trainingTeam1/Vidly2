@@ -9,11 +9,12 @@
 			@Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 			@Html.ActionLink("Customers", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })
 			@Html.ActionLink("Movies", "Index", "Movies", new { area = "" }, new { @class = "navbar-brand" })
+			@Html.ActionLink("New Rental", "New", "Rentals", new { area = "" }, new { @class = "navbar-brand" })
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
+				<li>@Html.ActionLink("New Rental", "New", "Rentals")</li>
 				<li>@Html.ActionLink("Home", "Index", "Home")</li>
-				<li>@Html.ActionLink("About", "About", "Home")</li>
 			</ul>
 			@Html.Partial("_LoginPartial")
 		</div>

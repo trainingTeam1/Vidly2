@@ -200,14 +200,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="DTOs\CustomerDto.cs" />
     <Compile Include="DTOs\GenreDto.cs" />
     <Compile Include="DTOs\MembershipTypeDto.cs" />
     <Compile Include="DTOs\MovieDto.cs" />
+    <Compile Include="DTOs\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -276,6 +279,26 @@
     <Compile Include="Migrations\202103221845473_AddLicenseToApplicationUser.Designer.cs">
       <DependentUpon>202103221845473_AddLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103271441532_CreateRentalClass.cs" />
+    <Compile Include="Migrations\202103271441532_CreateRentalClass.Designer.cs">
+      <DependentUpon>202103271441532_CreateRentalClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103271443549_CreateRentalClassToModels.cs" />
+    <Compile Include="Migrations\202103271443549_CreateRentalClassToModels.Designer.cs">
+      <DependentUpon>202103271443549_CreateRentalClassToModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103271458259_AddNumbersAvailableToMovies.cs" />
+    <Compile Include="Migrations\202103271458259_AddNumbersAvailableToMovies.Designer.cs">
+      <DependentUpon>202103271458259_AddNumbersAvailableToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103271502025_ChangeNumbersInMoviesType.cs" />
+    <Compile Include="Migrations\202103271502025_ChangeNumbersInMoviesType.Designer.cs">
+      <DependentUpon>202103271502025_ChangeNumbersInMoviesType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103271502491_AddNumberAvailableToMovies.cs" />
+    <Compile Include="Migrations\202103271502491_AddNumberAvailableToMovies.Designer.cs">
+      <DependentUpon>202103271502491_AddNumberAvailableToMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -285,6 +308,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -533,6 +557,7 @@
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
+    <Content Include="Views\Rentals\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -598,6 +623,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103221845473_AddLicenseToApplicationUser.resx">
       <DependentUpon>202103221845473_AddLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103271441532_CreateRentalClass.resx">
+      <DependentUpon>202103271441532_CreateRentalClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103271443549_CreateRentalClassToModels.resx">
+      <DependentUpon>202103271443549_CreateRentalClassToModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103271458259_AddNumbersAvailableToMovies.resx">
+      <DependentUpon>202103271458259_AddNumbersAvailableToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103271502025_ChangeNumbersInMoviesType.resx">
+      <DependentUpon>202103271502025_ChangeNumbersInMoviesType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103271502491_AddNumberAvailableToMovies.resx">
+      <DependentUpon>202103271502491_AddNumberAvailableToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

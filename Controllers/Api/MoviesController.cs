@@ -56,6 +56,7 @@ namespace Vidly.Controllers.Api
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
             var movie = Mapper.Map<MovieDto, Movie>(movieDto);
+            movie.NumbersAvailable = movie.NumbersInStock;
             _context.Movies.Add(movie);
             _context.SaveChanges();
 
